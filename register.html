@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./vendors/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendors/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/page/account.css">
+    <title>Document</title>
+</head>
+<body>
+<header class="header">
+    <div class="container-fluid">
+        <div class="row justify-content-between">
+            <div class="header__navs navbar navbar-expand-md">
+                <!--                brand-->
+                <button class="navbar-toggler">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="https://picsum.photos/500" width="70" height="40" alt=""></a>
+                <!--                menu-->
+                <div class="header__main-list">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trang chủ</a>
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Trang chủ </a>
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Trang chủ</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Giới thiệu</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Giới thiệu</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dịch vụ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mời hợp tác</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!--            login-->
+            <div class="header__login">
+                <ul class="nav align-items-center">
+                    <li class="nav-item header__sign">
+                        <a class="nav-link" href="#">Đăng ký</a>
+                    </li>
+                    <li class="nav-item header__log">
+                        <a class="nav-link" href="#">Đăng nhập</a>
+                    </li>
+                </ul>
+                <!--                <div class="position-relative">-->
+                <!--                    <div class="nav-item header__user p-1 ">-->
+                <!--                        <span class="header__user-img"><img src="https://picsum.photos/300" width="30" height="30"-->
+                <!--                                                            alt=""></span>-->
+                <!--                        <span class="nav-link">Duynguyen2709 <i class="fas fa-chevron-down"></i></span>-->
+                <!--                    </div>-->
+                <!--                    <div class="header__user-dropdown ">-->
+                <!--                        <a class="dropdown-item" href="#"><i class="fas fa-info"></i> Thông tin chi tiết</a>-->
+                <!--                        <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+            </div>
+        </div>
+    </div>
+</header>
+<aside class="header__side-list">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Trang chủ</a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trang chủ</a>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Giới thiệu</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Giới thiệu</a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Giới thiệu</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Dịch vụ</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Mời hợp tác</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Liên hệ</a>
+        </li>
+
+    </ul>
+</aside>
+<aside></aside>
+<main>
+   <div class="container account">
+       <div class="row">
+           <div class="col-12 col-md-3 d-flex justify-content-center align-items-center order-2 order-md-1">
+             <div class="text-center account__move">
+                 <h4>Đã có tài khoản </h4>
+                 <p>về trang đăng nhập</p>
+                 <a class="btn">Đăng nhập</a>
+             </div>
+           </div>
+           <div class="col-12 col-md-9 order-1 order-md-2">
+               <div class="account__layout">
+                   <div class="account__switch">
+                       <ul class="nav">
+                           <li class="nav-item active" data-type-form="doctors">Doctors</li>
+                           <li class="nav-item" data-type-form="patients">Patients</li>
+                       </ul>
+                   </div>
+                   <div class="account__form-doctors account__form">
+                       <h3 class="text-center">Đăng kí tài khoản bác sĩ</h3>
+                       <form action="">
+                           <label for="name-dt">Họ và tên</label>
+                           <input type="text" id="name-dt" placeholder="Họ và tên *">
+                           <label for="email-dt">Email</label>
+                           <input type="text" id="email-dt" placeholder="wasahara11111@gmail.com *">
+                           <label for="telephone-dt">Điện thoại</label>
+                           <input type="text" id="telephone-dt" placeholder="0900******* *">
+                           <label for="password-dt">Mật khẩu</label>
+                           <input type="text" id="password-dt" placeholder="Mật khẩu *">
+                           <label for="re-password-dt">Nhập lại mật khẩu</label>
+                           <input type="text" id="re-password-dt" placeholder="Nhập lại mật khẩu *">
+                           <button type="submit" class="button">Đăng ký</button>
+                       </form>
+                   </div>
+                   <div class="account__form-patients account__form" style="display: none">
+                       <h3 class="text-center">Đăng kí tài khoản bệnh nhân</h3>
+                       <form action="">
+                           <label for="name-pt">Họ và tên</label>
+                           <input type="text" id="name-pt">
+                           <label for="telephone-pt">Điện thoại</label>
+                           <input type="text" id="telephone-pt">
+                           <label for="password-pt">Mật khẩu</label>
+                           <input type="text" id="password-pt">
+                           <label for="re-password-pt">Nhập lại mật khẩu</label>
+                           <input type="text" id="re-password-pt">
+                           <button type="submit" class="button">Đăng ký</button>
+                       </form>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 footer__content p-3">
+                <div class="footer__brand ">
+                    <img src="https://picsum.photos/300" width="100" height="80" alt="">
+                </div>
+                <div class="footer__info  pl-3">
+                    <div>
+                        <h5 class="m-0 pt-3">Lorem ipsum dolor sit amet, </h5>
+                        <p class="m-0 small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, modi.</p>
+                        <p>SDT :0123456789</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__social col-12 col-md-6 ">
+                <ul>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-youtube"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer__copyright text-center p-2 ">
+        <i>@Copyright by <span>Duy Nguyễn </span></i>
+    </div>
+</footer>
+
+<script src="./vendors/js/jquery-3.4.1.js"></script>
+<script src="./vendors/js/bootstrap.bundle.min.js"></script>
+<script src="./vendors/js/bootstrap.min.js"></script>
+<script src="./assets/js/index.js"></script>
+</body>
+</html>

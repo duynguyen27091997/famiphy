@@ -1,0 +1,38 @@
+@import url('../basic/basic.css');
+@import url('../layout/header.css');
+@import url('../layout/footer.css');
+@import url('../page/account.css');
+.text-layout{
+    padding: 20px;
+}
+.text-layout h1,
+.text-layout h2,
+.text-layout h3,
+.text-layout h4,
+.text-layout h5,
+.text-layout h6{
+    font-weight: 700;
+    margin: 20px 0;
+    color:var(--color-main);
+}
+.text-layout li{
+    list-style: none;
+    position: relative;
+}
+.text-layout li:before{
+    width:10px;
+    content: '';
+}
+/*contact*/
+.contact .account__layout {
+    background: #fff;
+    padding: 20px 0;
+}
+.text-img {
+    text-align: center;
+
+}
+.text-layout img{
+    max-width: 100%;
+    object-fit: cover;
+}
