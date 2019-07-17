@@ -6,7 +6,7 @@ $('.navbar-toggler').click(()=>{
     $('.header__side-list').toggleClass('show');
 });
 $(window).on('resize',()=>{
-   if(window.innerWidth>=767){
+   if(window.innerWidth>=991){
         $('.header__side-list').removeClass('show');
     }
 });

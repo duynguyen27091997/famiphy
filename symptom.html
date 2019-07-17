@@ -7,24 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./vendors/css/bootstrap.min.css">
     <link rel="stylesheet" href="./vendors/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/page/account.css">
+    <link rel="stylesheet" href="./assets/css/page/index.css">
+    <link rel="stylesheet" href="./assets/css/page/symptom.css">
     <title>Document</title>
 </head>
 <body>
 <header class="header">
     <div class="container-fluid">
         <div class="row justify-content-between">
-            <div class="header__navs navbar navbar-expand-md">
+            <div class="header__navs navbar navbar-expand-lg">
                 <!--                brand-->
                 <button class="navbar-toggler">
                     <span class="navbar-toggler-icon"></span>
                     <span class="navbar-toggler-icon"></span>
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="/assets/images/logo/logo-blue.jpg" alt=""></a>
-                <!--                menu-->
+                <a class="navbar-brand" href="#"><img src="./assets/images/logo/logo-blue.jpg" alt=""></a>
+                <!--                menu  desktop-->
                 <div class="header__main-list">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav mr-auto flex-row">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Trang chủ</a>
                             <ul class="navbar-nav mr-auto">
@@ -62,6 +63,7 @@
             </div>
             <!--            login-->
             <div class="header__login">
+                <!--                log in & sign in-->
                 <ul class="nav align-items-center">
                     <li class="nav-item header__sign">
                         <a class="nav-link" href="#">Đăng ký</a>
@@ -70,6 +72,7 @@
                         <a class="nav-link" href="#">Đăng nhập</a>
                     </li>
                 </ul>
+                <!--                    login success-->
                 <!--                <div class="position-relative">-->
                 <!--                    <div class="nav-item header__user p-1 ">-->
                 <!--                        <span class="header__user-img"><img src="https://picsum.photos/300" width="30" height="30"-->
@@ -85,6 +88,7 @@
         </div>
     </div>
 </header>
+<!--menu sidebar-->
 <aside class="header__side-list">
     <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
@@ -121,49 +125,118 @@
 
     </ul>
 </aside>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Triệu chứng</li>
+    </ol>
+</nav>
+<!--    main-->
 <main>
-    <div class="container account">
-        <div class="row">
-            <div class="col-12 col-md-3 d-flex justify-content-center align-items-center order-2 order-md-1">
-                <div class="text-center account__move">
-                    <h4>Chưa có tài khoản </h4>
-                    <p>về trang đăng kí</p>
-                    <a class="btn">Đăng kí</a>
+    <div class="container symptom">
+        <div class="row symptom__input">
+            <div class="col-12 col-md-4 ">
+                <div class="card">
+                    <h5 class="text-center">Chọn bệnh nhân muốn điều trị</h5>
+                    <div class="py-3">
+                        <ul class="nav px-3">
+                            <li><label>
+                                <input type="radio" name="patient-name" >
+                                <span>nguyen ngoc duy</span>
+                            </label></li>
+                            <li><label>
+                                <input type="radio" name="patient-name" >
+                                <span>nguyen ngoc duong</span>
+                            </label></li>
+                            <li><label>
+                                <input type="radio" name="patient-name" >
+                                <span>nguyen ngoc duy</span>
+                            </label></li>
+                            <li><label>
+                                <input type="radio" name="patient-name" >
+                                <span>nguyen ngoc duong</span>
+                            </label></li>
+                        </ul>
+                    </div>
+                    <button class="button"> Thêm bệnh nhân</button>
                 </div>
             </div>
-            <div class="col-12 col-md-9 order-1 order-md-2">
-                <div class="account__layout">
-                    <div class="account__form">
-                        <h3 class="text-center">Đăng nhập tài khoản</h3>
-                        <form action="">
-                            <label for="name">Họ và tên</label>
-                            <input type="text" id="name" placeholder="Họ và tên *">
-                            <label for="pass">Mật khẩu</label>
-                            <input type="text" id="pass" placeholder="Nhập mật khẩu *">
-                            <button type="submit" class="button float-none">Đăng nhập</button>
-                        </form>
+            <div class="col-12 col-md-8" >
+                <div class="card symptom__form pb-4">
+                    <p class="symptom__qs"><span class="color-main font-weight-bold mr-4">Q :</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ipsum iure minima porro! Aspernatur fuga fugit labore provident repellendus vitae.</p>
+                    <div class="py-3">
+                        <ul class="nav">
+                            <li><label>
+                                <input type="radio" name="symptom-name" >
+                                <span>Đi tiêu ít hơn 3 lần/tuần </span>
+                            </label></li>
+                            <li><label>
+                                <input type="radio" name="symptom-name" >
+                                <span>Ngủ gà, choáng voáng</span>
+                            </label></li>
+                            <li><label>
+                                <input type="radio" name="symptom-name" >
+                                <span>Khóc không nước mắt</span>
+                            </label></li>
+                            <li><label>
+                                <input type="radio" name="symptom-name" >
+                                <span>Dấu véo da mất chậm</span>
+                            </label></li>
+                        </ul>
                     </div>
+                    <div class=" py-3 d-flex justify-content-end"><button class="button">Tiếp tục</button></div>
                 </div>
             </div>
         </div>
+        <div class="row symptom__info mt-4">
+            <div class="col-12 pb-3">
+                <h5 class="text-center">Kết quả ghi nhận</h5>
+            </div>
+           <div class="col-12">
+              <div class="row">
+                  <div class="col-4 col-lg-3">
+                      <div class="card">
+                          <h6 class="text-center py-3"> Triệu chứng</h6>
+                          <div class="card-text text-center py-3"> Lorem ipsum dolor sit amet.</div>
+                      </div>
+                  </div>
+                  <div class="col-4 col-lg-3">
+                      <div class="card">
+                          <h6 class="text-center py-3">Biểu hiện của bệnh</h6>
+                          <div class="card-text text-center py-3"> Lorem ipsum dolor sit amet.</div>
+                      </div>
+                  </div>
+              </div>
+           </div>
+        </div>
     </div>
 </main>
+<!--footer-->
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6 footer__content p-3">
-                <div class="footer__brand ">
-                    <img src="./assets/images/logo/logo-blue.jpg" alt="">
-                </div>
-                <div class="footer__info  pl-3">
-                    <div>
-                        <h5 class="m-0 pt-3">Lorem ipsum dolor sit amet, </h5>
-                        <p class="m-0 small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, modi.</p>
-                        <p>SDT :0123456789</p>
+            <!--            info company-->
+            <div class="col-12 col-lg-6 footer__content p-3">
+                <div class="row">
+                    <div class="col-5 d-flex align-items-center">
+                        <div class="footer__brand ">
+                            <img src="./assets/images/logo/logo-blue.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="footer__info  pl-3">
+                            <div>
+                                <h5 class="m-0 pt-3">Lorem ipsum dolor sit amet, </h5>
+                                <p class="m-0 small">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Exercitationem, modi.</p>
+                                <p>SDT :0123456789</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="footer__social col-12 col-md-6 ">
+            <!--            link to social-->
+            <div class="footer__social col-12 col-lg-6 ">
                 <ul>
                     <li><i class="fab fa-twitter"></i></li>
                     <li><i class="fab fa-facebook-f"></i></li>
@@ -173,11 +246,12 @@
             </div>
         </div>
     </div>
+    <!--    copyright of page-->
     <div class="footer__copyright text-center p-2 ">
         <i>@Copyright by <span>Duy Nguyễn </span></i>
     </div>
 </footer>
-
+<!--script config front end-->
 <script src="./vendors/js/jquery-3.4.1.js"></script>
 <script src="./vendors/js/bootstrap.bundle.min.js"></script>
 <script src="./vendors/js/bootstrap.min.js"></script>

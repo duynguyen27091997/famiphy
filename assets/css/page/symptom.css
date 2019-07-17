@@ -1,0 +1,72 @@
+.symptom h5{
+    color: var(--color-main);
+    font-weight: 700;
+}
+.symptom__input .card{
+    padding: 7px;
+
+}
+.symptom__input input{
+    -webkit-appearance: none;
+    position: relative;
+    user-select: none;
+
+}
+.symptom__input input:before{
+    cursor: pointer;
+    content: '';
+    transform-origin: top right;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 3px solid var(--color-main);
+    top: -12px;
+    left: 0;
+    transition: .3s;
+    user-select: none;
+
+}
+.symptom__input input:focus{
+    outline: none;
+
+}
+.symptom__input span{
+    margin-left: 20px;
+    user-select: none;
+}
+.symptom__input input:checked:before{
+    border-left: transparent;
+    border-top: transparent;
+    width: 10px;
+    left: 5px;
+    transform: rotate(35deg);
+}
+.symptom__input .card h5{
+    padding: 10px;
+    border-bottom: 2px solid var(--color-main);
+}
+.symptom__input .card {
+    padding: 10px;
+    height: 100%;
+
+}
+.symptom ul.nav{
+    flex-direction: column;
+}
+.symptom__qs{
+    font-size: 18px;
+}
+.symptom__form button{
+    transition: .3s;
+    background: #fff;
+    border: 2px solid var(--color-main);
+    color:var(--color-main);
+}
+.symptom__form button:hover{
+    background: var(--color-main);
+    color: #fff;
+}
+.symptom__info h6{
+    background: var(--color-gray);
+    color: #fff;
+}
